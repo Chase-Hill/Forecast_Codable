@@ -15,6 +15,8 @@
 		413CA72327B0DC4300461FE3 /* DayDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */; };
 		413CA72527B0DC7E00461FE3 /* DayForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */; };
 		AF3D97D329AD477F00A13C2C /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D97D229AD477F00A13C2C /* Day.swift */; };
+		AF3D97D629AD49D700A13C2C /* DayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D97D529AD49D700A13C2C /* DayController.swift */; };
+		AF3D97DD29AD4B0600A13C2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3D97DC29AD4B0600A13C2C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailsViewController.swift; sourceTree = "<group>"; };
 		413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayForcastTableViewCell.swift; sourceTree = "<group>"; };
 		AF3D97D229AD477F00A13C2C /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		AF3D97D529AD49D700A13C2C /* DayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayController.swift; sourceTree = "<group>"; };
+		AF3D97DC29AD4B0600A13C2C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +66,8 @@
 			children = (
 				413CA71A27B0DA5600461FE3 /* Supporting Files */,
 				AF3D97D129AD476C00A13C2C /* Storyboard */,
-				413CA71E27B0DBDB00461FE3 /* View */,
 				AF3D97D429AD478200A13C2C /* Model */,
+				AF3D97D829AD49FD00A13C2C /* Controllers */,
 			);
 			path = Forecast_Codable;
 			sourceTree = "<group>";
@@ -75,17 +79,9 @@
 				413CA70827B0DA1C00461FE3 /* SceneDelegate.swift */,
 				413CA70F27B0DA1F00461FE3 /* Assets.xcassets */,
 				413CA71427B0DA1F00461FE3 /* Info.plist */,
+				AF3D97DC29AD4B0600A13C2C /* Constants.swift */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		413CA71E27B0DBDB00461FE3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */,
-				413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		AF3D97D129AD476C00A13C2C /* Storyboard */ = {
@@ -103,6 +99,40 @@
 				AF3D97D229AD477F00A13C2C /* Day.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AF3D97D829AD49FD00A13C2C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D97D929AD4A0200A13C2C /* Model Controller */,
+				AF3D97DB29AD4A1200A13C2C /* View Controller */,
+				AF3D97DA29AD4A0A00A13C2C /* Custom Cell */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AF3D97D929AD4A0200A13C2C /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF3D97D529AD49D700A13C2C /* DayController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		AF3D97DA29AD4A0A00A13C2C /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		AF3D97DB29AD4A1200A13C2C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3D97D629AD49D700A13C2C /* DayController.swift in Sources */,
 				413CA70727B0DA1C00461FE3 /* AppDelegate.swift in Sources */,
 				413CA72327B0DC4300461FE3 /* DayDetailsViewController.swift in Sources */,
 				413CA70927B0DA1C00461FE3 /* SceneDelegate.swift in Sources */,
+				AF3D97DD29AD4B0600A13C2C /* Constants.swift in Sources */,
 				AF3D97D329AD477F00A13C2C /* Day.swift in Sources */,
 				413CA72527B0DC7E00461FE3 /* DayForcastTableViewCell.swift in Sources */,
 			);
