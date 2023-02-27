@@ -25,7 +25,7 @@ class DayDetailsViewController: UIViewController {
     }
     
     func updateViews() {
-    
+        
     }
 }
 

@@ -13,7 +13,9 @@ class DayForcastTableViewCell: UITableViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var forcastedHighLabel: UILabel!
     
-    func updateViews() {
-        
+    func updateViews(day: Day) {
+        dayNameLabel.text = day.validDate
+        forcastedHighLabel.text = String(day.highTemp)
+        iconImageView.image = UIImage(named: day.weather.iconString)
     }
 }
